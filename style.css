@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+
+/* ----------------------
+        Variables
+------------------------- */
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-darkblue1: hsl(217, 54%, 11%);
+    --Very-darkblue2: hsl(216, 50%, 16%);
+    --Very-darkblue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+/* --------------------------
+        RESET
+----------------------------- */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,
+body{
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-darkblue1);
+}
+body{
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    color:              var(--White);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    padding: 2.4em;
+    background-color: var(--Very-darkblue2);
+    border-radius: 1.6em;
+    box-shadow: 1rem 0.1rem 2rem 0.1rem rgba(0, 0, 0, 0.26);
+}
+
+h1{
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1.364em;
+}
+.description{
+    font-size: 1.8rem;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin: 1.4em 0;
+}
+.history{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+.price{
+    color: var(--Cyan);
+    background-image: url("images/icon-ethereum.svg");
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+.time-left{
+    background-image: url("images/icon-clock.svg");
+    background-repeat: no-repeat;
+    padding-left: 2em;
+    line-height: 1.5em;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+hr{
+    height: 1px;
+    width: 100%;
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    margin: 1em 0;
+}
+.div-avatar{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+
+}
+.avatar{
+    max-width: 2em;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+.user-name{
+    margin-left: 1em;
+}
+.creator{
+    color:hsl(215, 51%, 70%);
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+.links:focus{
+    color: var(--Cyan);
+}
+.links:hover{
+    color: var(--Cyan);
+}
+.img-link{
+    background-color: hsla(178, 100%, 50%, 0.438);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.45em;
+}
+.img-hovered{
+    background-image: url("images/image-equilibrium.jpg");
+    border-radius: 0.45em;
+    height: 30em;
+    width: 30em;
+    max-height: 300px;
+    max-width: 300px;
+    background-size: cover;
+}
+
+.img-hovered:focus .img-link{
+    display: flex;
+}
+
+.img-hovered:hover .img-link{
+    display: flex;
+    cursor: pointer;
+}
+
